@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
 import { Line } from "react-chartjs-2"
+import PersonalInfo from "./PersonalInfo";
+
 
 function PatientData() {
     const [patientData, setPatientData] = useState(null)
@@ -31,9 +33,12 @@ function PatientData() {
     return (
         <div>
             <PersonalInfo data={patientData} />
-            <DiagnosisHistory history={patientData.diagnosis_history} />
+            
         </div>
     )
 }
+
+// For when I create the DiagnosisHistory component:
+//<DiagnosisHistory history={patientData.diagnosis_history} />
 
 export default PatientData
