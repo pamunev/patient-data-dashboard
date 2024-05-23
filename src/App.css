@@ -1,7 +1,59 @@
 /*-----Global Styles-----*/
 
 .App {
-  background-color: #F6F7F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F6F7F8 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+/*-----Header-----*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.header ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+.header ul .active {
+  background-color: green;
+}
+
+.header .user {
+  display: flex;
+  flex-direction: row;
+}
+
+/*-----Body-----*/
+
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*-----Patients List Section-----*/
+
+.patients-list {
+  margin: 16px;
+}
+
+/*-----Diagnosis History Section-----*/
+
+.diagnosis-history {
+  margin: 16px;
 }
 
 /*-----Personal Info Section-----*/
@@ -18,6 +70,7 @@
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 16px;
   opacity: 1;
+  margin: 16px;
 }
 
 .group-1-personal-info {
@@ -101,4 +154,5 @@
   background: transparent url('img/Layer 2.png') 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+
 

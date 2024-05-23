@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
-import { Line } from "react-chartjs-2"
 import PersonalInfo from "./PersonalInfo";
+import DiagnosisHistory from "./DiagnosisHistory";
+import PatientsList from "./PatientsList";
 
 
 function PatientData() {
@@ -31,9 +32,10 @@ function PatientData() {
     }
 
     return (
-        <div>
+        <div className="body">
+            <PatientsList />
+            <DiagnosisHistory history={patientData.diagnosis_history} />
             <PersonalInfo data={patientData} />
-            
         </div>
     )
 }
