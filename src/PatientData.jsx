@@ -3,6 +3,8 @@ import axios from "axios"
 import PersonalInfo from "./PersonalInfo";
 import DiagnosisHistory from "./DiagnosisHistory";
 import PatientsList from "./PatientsList";
+import DiagnosticList from "./DiagnosticList";
+import LabResults from "./LabResults";
 
 
 function PatientData() {
@@ -35,7 +37,9 @@ function PatientData() {
         <div className="body">
             <PatientsList />
             <DiagnosisHistory history={patientData.diagnosis_history} />
+            <DiagnosticList />
             <PersonalInfo data={patientData} />
+            <LabResults />
         </div>
     )
 }
