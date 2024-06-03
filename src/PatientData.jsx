@@ -17,8 +17,8 @@ function PatientData() {
           password: "skills-test",
         };
         const response = await axios.get(
-          //"https://fedskillstest.coalitiontechnologies.workers.dev",
-          "https://run.mocky.io/v3/534148d7-98e5-4f3d-8bba-2ff970d0b6f7",
+          "https://fedskillstest.coalitiontechnologies.workers.dev",
+          //"https://run.mocky.io/v3/534148d7-98e5-4f3d-8bba-2ff970d0b6f7",
           {
             auth,
           }
@@ -54,8 +54,5 @@ function PatientData() {
     </div>
   );
 }
-
-// For when I create the DiagnosisHistory component:
-//<DiagnosisHistory history={patientData.diagnosis_history} />
 
 export default PatientData;

@@ -26,8 +26,8 @@ function PatientsList() {
           <div className="patient">
             <img src={emily} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Emily Williams</p>
+              <p className="patient-traits">Female, 18</p>
             </div>
           </div>
           <img src={hotdogs} alt="Info" />
@@ -37,110 +37,121 @@ function PatientsList() {
           <div className="patient">
             <img src={ryan} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Ryan Johnson</p>
+              <p className="patient-traits">Male, 45</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={brandon} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Brandon Mitchell</p>
+              <p className="patient-traits">Male, 36</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={jessica} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Jessica Taylor</p>
+              <p className="patient-traits">Female, 28</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={samantha} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Samantha Johnson</p>
+              <p className="patient-traits">Female, 56</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={ashley} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Ashley Martinez</p>
+              <p className="patient-traits">Female, 54</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={olivia} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Olivia Brown</p>
+              <p className="patient-traits">Female, 32</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={tyler} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Tyler Davis</p>
+              <p className="patient-traits">Male, 19</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={kevin} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Kevin Anderson</p>
+              <p className="patient-traits">Male, 30</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={dylan} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Dylan Thompson</p>
+              <p className="patient-traits">Male, 36</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={nathan} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Nathan Evans</p>
+              <p className="patient-traits">Male, 58</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
 
         <div className="patient-row">
           <div className="patient">
             <img src={mike} className="patient-pic" />
             <div className="patient-data">
-              <p className="patient-name"></p>
-              <p className="patient-traits"></p>
+              <p className="patient-name">Mike Nolan</p>
+              <p className="patient-traits">Male, 31</p>
             </div>
           </div>
+          <img src={hotdogs} alt="Info" />
         </div>
       </div>
     </div>
