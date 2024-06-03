@@ -16,13 +16,43 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  top: 18px;
-  left: 18px;
-  width: 1564px;
-  height: 72px;
+  height: 6.025%;
+  margin-top: 1.9246%;
+  align-items: center;
   background: #ffffff;
   border-radius: 70px;
   opacity: 1;
+  justify-content: space-between;
+}
+
+.header .logo {
+  margin-left: 2.046%;
+  width: 13.491049%;
+}
+
+.header .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  width: 42.391304%;
+}
+
+.header nav ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.header li {
+  margin-right: 3.58%;
+  width: 13.273%;
+}
+
+.header .side-icons {
+  margin-right: 2.046%;
 }
 
 .header ul {
@@ -34,15 +64,24 @@ body {
 .header ul li {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-right: 8.45%;
+}
+
+.header ul li p {
+  margin-left: 10%;
 }
 
 .header ul .active {
-  background-color: green;
+  background: #01f0d0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  opacity: 1;
 }
 
 .header .user {
   display: flex;
   flex-direction: row;
+  width: 11.57289%;
 }
 
 /*-----Body-----*/
@@ -76,10 +115,54 @@ body {
 
 /*-----Patients List Section-----*/
 
-.patients-list {
+.patients-list-menu {
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  height: 88.200837%;
+}
+
+.patients-list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.12093%;
+  width: 89.100817%;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.patients-list-header img {
+  width: 17.99px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.patients-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 1px 20px;
+}
+
+.patient-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.patient-row img {
+  width: 18px;
+  height: 3.71px;
+}
+
+.patient img {
+  width: 48px;
+  height: auto;
 }
 
 /*-----Diagnosis History Section-----*/

@@ -18,7 +18,7 @@ function PatientData() {
         };
         const response = await axios.get(
           //"https://fedskillstest.coalitiontechnologies.workers.dev",
-          "https://run.mocky.io/v3/9a8a2741-cc14-4d60-906c-2b7704e73ef2",
+          "https://run.mocky.io/v3/534148d7-98e5-4f3d-8bba-2ff970d0b6f7",
           {
             auth,
           }
