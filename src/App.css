@@ -209,11 +209,120 @@ body {
   opacity: 1;
 }
 
-.diagnosis-history .title {
+.diagnosis-history .section-title {
   text-align: left;
   font: normal normal 800 24px/33px Manrope;
   letter-spacing: 0px;
   color: #072635;
+  opacity: 1;
+}
+
+.graph-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graph-title {
+  text-align: left;
+  font: normal normal bold 18px/24px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.chart-and-legend {
+  background: #f4f0fe 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chart-container {
+  width: 65%;
+}
+
+.time-period {
+  text-align: right;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.expand-arrow {
+  width: 10.65px;
+  height: auto;
+  background: transparent url("img/expand_more_FILL0_wght300_GRAD0_opsz24.png")
+    0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-left: 16px;
+}
+
+/*-----Graph Legend-----*/
+
+.graph-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 16px;
+  width: 35%;
+  margin-left: 36px;
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.legend-label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.label-values {
+  text-align: left;
+  font: normal normal bold 22px/30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.legend-arrow {
+  width: 10px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.legend-description {
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.legend-separator {
+  background: #cbc8d4 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
