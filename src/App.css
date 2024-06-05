@@ -29,61 +29,58 @@ body {
   display: flex;
   flex-direction: row;
   height: 6.025%;
-  margin-top: 1.9246%;
+  margin-top: 18px;
   align-items: center;
   background: #ffffff;
   border-radius: 70px;
   opacity: 1;
-  justify-content: space-between;
   margin-left: 18px;
   margin-right: 18px;
 }
 
-.header .logo {
-  margin-left: 2.046%;
-  width: 13.491049%;
-}
-
 .header .logo img {
-  width: 100%;
+  margin-left: 32px;
+  width: 210.58px;
   height: auto;
 }
 
-.header nav {
+.navigation {
   display: flex;
   flex-direction: row;
-  width: 42.391304%;
+  align-items: center;
 }
 
 .header nav ul li img {
-  width: 100%;
+  width: 15.51px;
   height: auto;
 }
 
-.header li {
-  margin-right: 3.58%;
-  width: 13.273%;
-}
-
-.header .side-icons {
-  margin-right: 2.046%;
+.nav-option {
+  display: flex;
+  align-items: center;
 }
 
 .header ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-left: 130px;
 }
 
 .header ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 8.45%;
+  margin-right: 37px;
 }
 
 .header ul li p {
-  margin-left: 10%;
+  margin-left: 9px;
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
 }
 
 .header ul .active {
@@ -92,10 +89,61 @@ body {
   opacity: 1;
 }
 
-.header .user {
+.user-and-side-icons {
+  display: flex;
+}
+
+.user {
   display: flex;
   flex-direction: row;
-  width: 11.57289%;
+  align-items: center;
+}
+
+.user-pic {
+  width: 44px;
+  height: 44px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.user-name {
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.user-title {
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.header .side-icons {
+  margin-right: 2.046%;
+}
+
+.side-icons {
+  display: flex;
+}
+
+.user-settings {
+  width: 18.94px;
+  height: 20px;
+}
+
+.user-hotdogs {
+  width: 3.71px;
+  height: 18px;
+  margin-left: 12px;
 }
 
 /*-----Body-----*/

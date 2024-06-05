@@ -15,40 +15,43 @@ function Header() {
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
-      <nav>
+      <nav className="navigation">
         <ul>
-          <li>
+          <li className="nav-option">
             <img src={homeIcon} alt="Home" />
             <p>Home</p>
           </li>
-          <li className="active">
+          <li className="active nav-option">
             <img src={patientsIcon} alt="Home" />
             <p>Patients</p>
           </li>
-          <li>
+          <li className="nav-option">
             <img src={calendarIcon} alt="Home" />
             <p>Schedule</p>
           </li>
-          <li>
+          <li className="nav-option">
             <img src={chatIcon} alt="Home" />
             <p>Message</p>
           </li>
-          <li>
+          <li className="nav-option">
             <img src={creditCardIcon} alt="Home" />
             <p>Transactions</p>
           </li>
         </ul>
       </nav>
-      <div className="user">
-        <img src={jose} alt="Jose" />
-        <div className="user-info">
-          <p className="user-name">Dr. Jose Simmons</p>
-          <p className="user-title">General Practitioner</p>
+      <div className="user-and-side-icons">
+        <div className="user">
+          <img src={jose} alt="Jose" className="user-pic" />
+          <div className="user-info">
+            <p className="user-name">Dr. Jose Simmons</p>
+            <p className="user-title">General Practitioner</p>
+          </div>
         </div>
-      </div>
-      <div className="side-icons">
-        <img src={settings} alt="Settings" />
-        <img src={hotdogs} alt="More" />
+        <hr />
+        <div className="side-icons">
+          <img src={settings} alt="Settings" className="user-settings" />
+          <img src={hotdogs} alt="More" className="user-hotdogs" />
+        </div>
       </div>
     </div>
   );
