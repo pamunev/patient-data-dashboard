@@ -23,8 +23,135 @@ body {
   flex-direction: column;
 }
 
+/*-----Header Row-----*/
+
+.header-row {
+  display: flex;
+  width: 93.7425%;
+}
+
 /*-----Header-----*/
 
+.header {
+  display: flex;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  opacity: 1;
+  margin: 18px 18px 0px 18px;
+  align-items: center;
+}
+
+.logo {
+  width: 210.58px;
+  height: 48px;
+  margin-left: 32px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 110px;
+}
+
+.nav-option {
+  display: flex;
+  align-items: center;
+  padding: 2px 20px 0.5px;
+}
+
+.nav-option img {
+  width: 15.51px;
+  height: auto;
+}
+
+.nav-option p {
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin-left: 9px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.active {
+  background: #01f0d0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  opacity: 1;
+  padding-left: 16px;
+  background-position: -40px 0;
+  margin-left: 0;
+}
+
+.user-and-side-icons {
+  display: flex;
+  margin-left: 50px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-pic {
+  width: 44px;
+  height: 44px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  width: 130px;
+  margin-top: 7px;
+}
+
+.user-name {
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin-bottom: 0px;
+  margin-top: 2.5px;
+}
+
+.user-title {
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.side-icons {
+  margin-left: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.user-settings {
+  width: 18.94px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.user-hotdogs {
+  width: 3.71px;
+  height: 18px;
+  margin-right: 32.34px;
+}
+
+/*-----Old Header Stylings-----*/
+/*
 .header {
   display: flex;
   flex-direction: row;
@@ -145,6 +272,7 @@ body {
   height: 18px;
   margin-left: 12px;
 }
+*/
 
 /*-----Body-----*/
 
@@ -265,6 +393,8 @@ body {
   letter-spacing: 0px;
   color: #072635;
   opacity: 1;
+  margin-bottom: 4px;
+  margin-top: 10px;
 }
 
 .patient-traits {

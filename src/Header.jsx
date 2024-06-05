@@ -15,11 +15,11 @@ function Header() {
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
-      <nav className="navigation">
-        <ul>
+      <nav>
+        <ul className="navigation">
           <li className="nav-option">
             <img src={homeIcon} alt="Home" />
-            <p>Home</p>
+            <p>Overview</p>
           </li>
           <li className="active nav-option">
             <img src={patientsIcon} alt="Home" />

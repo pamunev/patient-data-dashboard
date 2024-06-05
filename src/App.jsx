@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
-import PatientData from './PatientData'
-import './App.css'
-import Header from "./Header"
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useState } from "react";
+import PatientData from "./PatientData";
+import "./App.css";
+import Header from "./Header";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
   return (
     <div className="App">
-      <Header />
+      <div className="header-row">
+        <Header />
+      </div>
       <PatientData />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
