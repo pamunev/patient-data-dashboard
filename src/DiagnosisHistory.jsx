@@ -14,6 +14,9 @@ import GraphLegend from "./GraphLegend";
 import arrowDown from "./assets/arrow-down-x2.png";
 import arrowUp from "./assets/arrow-up-x2.png";
 import expand from "./assets/expand-arrow.png";
+import RespiratoryRate from "./RespiratoryRate.jsx";
+import Temperature from "./Temperature.jsx";
+import HeartRate from "./HeartRate.jsx";
 
 ChartJS.register(
   CategoryScale,
@@ -26,6 +29,7 @@ ChartJS.register(
 );
 
 function DiagnosisHistory({ history }) {
+  console.log("hist:", history);
   const bloodPressureData = {
     labels: history.map(
       (entry) => `${entry.month.substring(0, 3)}, ${entry.year}`
@@ -63,6 +67,30 @@ function DiagnosisHistory({ history }) {
   const graphLegendDescriptions = ["Higher than average", "Lower than average"];
   const graphLegendImages = [arrowUp, arrowDown];
 
+  const respiratoryRateValue = history.length
+    ? history[history.length - 1].respiratory_rate.value
+    : "N/A";
+
+  const respiratoryRateLevels = history.length
+    ? history[history.length - 1].respiratory_rate.levels
+    : "N/A";
+
+  const temperatureValue = history.length
+    ? history[history.length - 1].temperature.value
+    : "N/A";
+
+  const temperatureLevels = history.length
+    ? history[history.length - 1].temperature.levels
+    : "N/A";
+
+  const heartRateValue = history.length
+    ? history[history.length - 1].heart_rate.value
+    : "N/A";
+
+  const heartRateLevels = history.length
+    ? history[history.length - 1].heart_rate.levels
+    : "N/A";
+
   return (
     <div className="diagnosis-history">
       <div className="section-title">
@@ -92,7 +120,23 @@ function DiagnosisHistory({ history }) {
           />
         </div>
       </div>
-      <div className="lower-section-diagnosis-history"></div>
+      <div className="lower-section-diagnosis-history">
+        <RespiratoryRate
+          respiratoryRate={respiratoryRateValue}
+          levels={respiratoryRateLevels}
+          className="respiratory-rate"
+        />
+        <Temperature
+          temperature={temperatureValue}
+          levels={temperatureLevels}
+          className="temperature"
+        />
+        <HeartRate
+          heartRate={heartRateValue}
+          levels={heartRateLevels}
+          className="heart-rate"
+        />
+      </div>
     </div>
   );
 }

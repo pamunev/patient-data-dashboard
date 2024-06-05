@@ -45,11 +45,11 @@ function PatientData() {
       </div>
       <div className="center-column">
         <DiagnosisHistory history={patientData.diagnosis_history} />
-        <DiagnosticList />
+        <DiagnosticList diagnosticList={patientData.diagnostic_list} />
       </div>
       <div className="right-column">
         <PersonalInfo data={patientData} />
-        <LabResults />
+        <LabResults labResults={patientData.lab_results} />
       </div>
     </div>
   );
