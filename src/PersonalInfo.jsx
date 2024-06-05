@@ -1,33 +1,73 @@
 import React from "react";
-import profilePicture from "../src/assets/jessica-taylor-2x.png"
+import profilePicture from "../src/assets/jessica-taylor-2x.png";
+import calendar from "./assets/calendar-personal.png";
+import female from "./assets/female-icon-x2.png";
+import phone from "./assets/phone-icon-x2.png";
+import insurance from "./assets/insurance-icon-x2.png";
 
 function PersonalInfo({ data }) {
-    return (
-        <div className="container-personal-info">
-            <img src={profilePicture} alt="Profile picture" className="photo-personal-info"/>
-            <h1 className="name-personal-info">{data.name}</h1>
-            <div className="group-1-personal-info">
-                <p className="label-text-personal-info">Date Of Birth</p>
-                <p className="info-text-personal-info">{data.date_of_birth}</p>
-            </div>
-            <div className="group-2-personal-info">
-                <p className="label-text-personal-info">Gender</p>
-                <p className="info-text-personal-info">{data.gender}</p>
-            </div>
-            <div className="group-3-personal-info">
-                <p className="label-text-personal-info">Contact Info.</p>
-                <p className="info-text-personal-info">{data.phone_number}</p>
-            </div>
-            <div className="group-4-personal-info">
-                <p className="label-text-personal-info">Emergency Contact</p>
-                <p className="info-text-personal-info">{data.emergency_contact}</p>
-            </div>
-            <div className="group-5-personal-info">
-                <p className="label-text-personal-info">Insurance Provider</p>
-                <p className="info-text-personal-info">{data.insurance_type}</p>
-            </div>
+  return (
+    <div className="container-personal-info">
+      <div className="pic-and-name">
+        <img
+          src={profilePicture}
+          alt="Profile picture"
+          className="photo-personal-info"
+        />
+        <div className="name-personal-info">{data.name}</div>
+      </div>
+      <div className="personal-info">
+        <div className="personal-info-row">
+          <img src={calendar} alt="DoB" className="personal-info-image" />
+          <div className="personal-info-data">
+            <div className="personal-info-category">Date Of Birth</div>
+            <div className="personal-info-detail">{data.date_of_birth}</div>
+          </div>
         </div>
-    )
+        <div className="personal-info-row">
+          <img src={female} alt="Gender" className="personal-info-image" />
+          <div className="personal-info-data">
+            <div className="personal-info-category">Gender</div>
+            <div className="personal-info-detail">{data.gender}</div>
+          </div>
+        </div>
+        <div className="personal-info-row">
+          <img
+            src={phone}
+            alt="Contact Info."
+            className="personal-info-image"
+          />
+          <div className="personal-info-data">
+            <div className="personal-info-category">Contact Info.</div>
+            <div className="personal-info-detail">{data.phone_number}</div>
+          </div>
+        </div>
+        <div className="personal-info-row">
+          <img
+            src={phone}
+            alt="Emergency Contacts"
+            className="personal-info-image"
+          />
+          <div className="personal-info-data">
+            <div className="personal-info-category">Emergency Contacts</div>
+            <div className="personal-info-detail">{data.emergency_contact}</div>
+          </div>
+        </div>
+        <div className="personal-info-row">
+          <img
+            src={insurance}
+            alt="Insurance"
+            className="personal-info-image"
+          />
+          <div className="personal-info-data">
+            <div className="personal-info-category">Insurance Provider</div>
+            <div className="personal-info-detail">{data.insurance_type}</div>
+          </div>
+        </div>
+      </div>
+      <button className="button">Show All Information</button>
+    </div>
+  );
 }
 
-export default PersonalInfo
+export default PersonalInfo;
