@@ -30,13 +30,15 @@ ChartJS.register(
 
 function DiagnosisHistory({ history }) {
   const bloodPressureData = {
-    labels: history.map(
-      (entry) => `${entry.month.substring(0, 3)}, ${entry.year}`
-    ),
+    labels: history
+      .map((entry) => `${entry.month.substring(0, 3)}, ${entry.year}`)
+      .reverse(),
     datasets: [
       {
         label: "Systolic",
-        data: history.map((entry) => entry.blood_pressure.systolic.value),
+        data: history
+          .map((entry) => entry.blood_pressure.systolic.value)
+          .reverse(),
         fill: false,
         backgroundColor: "#E66FD2",
         borderColor: "#C26EB4",
@@ -44,7 +46,9 @@ function DiagnosisHistory({ history }) {
       },
       {
         label: "Diastolic",
-        data: history.map((entry) => entry.blood_pressure.diastolic.value),
+        data: history
+          .map((entry) => entry.blood_pressure.diastolic.value)
+          .reverse(),
         fill: false,
         backgroundColor: "#8C6FE6",
         borderColor: "#7E6CAB",
@@ -98,7 +102,7 @@ function DiagnosisHistory({ history }) {
           <div className="graph-title-container">
             <h1 className="graph-title">Blood Pressure</h1>
             <div className="time-period">
-              Last 6 months{" "}
+              Last 2 years{" "}
               <img src={expand} alt="Expand" className="expand-arrow" />
             </div>
           </div>
