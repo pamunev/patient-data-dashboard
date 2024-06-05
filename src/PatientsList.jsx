@@ -30,7 +30,7 @@ function PatientsList() {
               <p className="patient-traits">Female, 18</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -41,7 +41,7 @@ function PatientsList() {
               <p className="patient-traits">Male, 45</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -52,10 +52,10 @@ function PatientsList() {
               <p className="patient-traits">Male, 36</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
-        <div className="patient-row">
+        <div className="patient-row-jessica">
           <div className="patient">
             <img src={jessica} className="patient-pic" />
             <div className="patient-data">
@@ -63,7 +63,7 @@ function PatientsList() {
               <p className="patient-traits">Female, 28</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -74,7 +74,7 @@ function PatientsList() {
               <p className="patient-traits">Female, 56</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -85,7 +85,7 @@ function PatientsList() {
               <p className="patient-traits">Female, 54</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -96,7 +96,7 @@ function PatientsList() {
               <p className="patient-traits">Female, 32</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -107,7 +107,7 @@ function PatientsList() {
               <p className="patient-traits">Male, 19</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -118,7 +118,7 @@ function PatientsList() {
               <p className="patient-traits">Male, 30</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -129,7 +129,7 @@ function PatientsList() {
               <p className="patient-traits">Male, 36</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -140,7 +140,7 @@ function PatientsList() {
               <p className="patient-traits">Male, 58</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
 
         <div className="patient-row">
@@ -151,7 +151,7 @@ function PatientsList() {
               <p className="patient-traits">Male, 31</p>
             </div>
           </div>
-          <img src={hotdogs} alt="Info" />
+          <img src={hotdogs} alt="Info" className="patient-list-hotdogs" />
         </div>
       </div>
     </div>

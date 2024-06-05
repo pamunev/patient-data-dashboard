@@ -121,7 +121,6 @@ body {
   opacity: 1;
   display: flex;
   flex-direction: column;
-  height: 1054px;
   margin-bottom: 19px;
 }
 
@@ -152,7 +151,7 @@ body {
 .patients-list {
   display: flex;
   flex-direction: column;
-  margin: 20px 20px 1px 20px;
+  margin-top: 20px;
 }
 
 .patient-row {
@@ -160,12 +159,21 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
 }
 
-.patient-row img {
+.patient-row-jessica {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #d8fcf7 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.patient-list-hotdogs {
   width: 18px;
   height: 3.71px;
+  margin-right: 20px;
 }
 
 .patient {
@@ -177,6 +185,7 @@ body {
 .patient img {
   width: 48px;
   height: auto;
+  margin: 16px 0px 16px 20px;
 }
 
 .patient-data {
@@ -217,7 +226,7 @@ body {
   letter-spacing: 0px;
   color: #072635;
   opacity: 1;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .graph-title-container {
@@ -397,13 +406,74 @@ body {
 
 /*-----Diagnostic List-----*/
 
-.diagnostic-list {
-  top: 827px;
-  left: 417px;
-  width: 766px;
-  height: 349px;
+.diagnostic-section {
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
+  opacity: 1;
+  margin-top: 32px;
+}
+
+.diagnostic-section-title {
+  margin: 20px;
+  text-align: left;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.diagnostic-column-headers {
+  display: flex;
+  margin: 20px 20px 10px 20px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+
+.diagnostic-problem-column-header {
+  width: 34.297521%;
+  margin: 15px 0px 14px 16px;
+}
+
+.diagnostic-description-column-header {
+  width: 50.137741%;
+  margin-top: 15px;
+}
+
+.diagnostic-status-column-header {
+  width: 15.564738%;
+  margin-top: 15px;
+}
+
+.diagnostic-problem-column {
+  width: 34.297521%;
+  margin: 21px 0px 19px 16px;
+}
+
+.diagnostic-description-column {
+  width: 50.137741%;
+  margin-top: 21px;
+}
+
+.diagnostic-status-column {
+  width: 15.564738%;
+  margin-top: 21px;
+}
+
+.diagnostic-list {
+  margin: 0px 20px 10px 20px;
+}
+
+.diagnosis-row {
+  display: flex;
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
   opacity: 1;
 }
 

@@ -29,7 +29,6 @@ ChartJS.register(
 );
 
 function DiagnosisHistory({ history }) {
-  console.log("hist:", history);
   const bloodPressureData = {
     labels: history.map(
       (entry) => `${entry.month.substring(0, 3)}, ${entry.year}`
@@ -93,9 +92,7 @@ function DiagnosisHistory({ history }) {
 
   return (
     <div className="diagnosis-history">
-      <div className="section-title">
-        <h1>Diagnosis History</h1>
-      </div>
+      <div className="section-title">Diagnosis History</div>
       <div className="chart-and-legend">
         <div className="chart-container">
           <div className="graph-title-container">
