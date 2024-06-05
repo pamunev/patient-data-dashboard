@@ -65,7 +65,9 @@ function PersonalInfo({ data }) {
           </div>
         </div>
       </div>
-      <button className="button">Show All Information</button>
+      <div className="button-container">
+        <button className="button">Show All Information</button>
+      </div>
     </div>
   );
 }
