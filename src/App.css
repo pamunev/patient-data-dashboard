@@ -685,3 +685,32 @@ body {
   width: 14px;
   height: auto;
 }
+
+/*-----Media Query-----*/
+
+@media all and (max-width: 907px) {
+  .body {
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .body .left-column,
+  .body .center-column,
+  .body .right-column {
+    width: 100%;
+  }
+
+  .diagnostic-section {
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  .body .right-column {
+    margin-top: 0;
+  }
+
+  .lab-results-section {
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+}
